@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+  background-color: hsl(210, 60%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+main div h1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main > div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main div h1 p {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  position: relative;
+  top: 2px;
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.gray {
+  color: hsl(219, 14%, 63%);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section > div {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 60px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+section > div:nth-of-type(1):after {
+  background-image: url(assets/images/avatar-mark-webber.webp);
+}
+section > div:nth-of-type(2):after {
+  background-image: url(assets/images/avatar-angela-gray.webp);
+}
+section > div:nth-of-type(3):after {
+  background-image: url(./assets/images/avatar-jacob-thompson.webp);
+}
+section > div:nth-of-type(4):after {
+  background-image: url(assets/images/avatar-rizky-hasanuddin.webp);
+}
+section > div:nth-of-type(5):after {
+  background-image: url(assets/images/avatar-kimberly-smith.webp);
+}
+section > div:nth-of-type(6):after {
+  background-image: url(assets/images/avatar-nathan-peterson.webp);
+}
+section > div:nth-of-type(7):after {
+  background-image: url(assets/images/avatar-anna-kim.webp);
+}
+section > div::after {
+  content: "";
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.unread {
+  background-color: hsl(205, 33%, 90%) z;
+}
+@media screen and (max-width: 768px) {
+  main {
+    height: 100%;
+    width: 100%;
+  }
+  main div h1 {
+    font-size: x-large;
+  }
+  main > div {
+    align-items: center;
+  }
+}
+
+.dot {
+  position: relative;
+  left: 5px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.close {
+  display: inline-block;
+}
+.open {
+  display: none;
+}
+section .notyet {
+  background-color: hsl(205, 33%, 90%);
+}
+.chat {
+  margin-top: 10px;
+  border: 1px solid hsl(219, 12%, 42%);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.chat:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+b:hover {
+  color: hsl(219, 85%, 26%);
+}
+.allDone {
+  cursor: pointer;
+}
+.chess {
+  width: 50px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* 
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+*/
